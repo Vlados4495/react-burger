@@ -6,19 +6,19 @@ import {
   ProfileIcon,
 } from "@ya.praktikum/react-developer-burger-ui-components";
 
-const AppHeader = () => {
+function AppHeader() {
   return (
     <header className={AppHeaderStyles.main}>
       <ul className={AppHeaderStyles.navbar}>
         <ul className={AppHeaderStyles.navbarItemContainer}>
-          <li className={`${AppHeaderStyles.navbarItem} text text_type_main-default`}>
+          <li className={`${AppHeaderStyles.navbarItem}  text_type_main-default`}>
             <BurgerIcon type="primary" />
             <a className={AppHeaderStyles.link} href="index.html">
               Конструктор
             </a>
           </li>
 
-          <li className={`${AppHeaderStyles.navbarItem} text text_type_main-default text_color_inactive`}>
+          <li className={`${AppHeaderStyles.navbarItem}  text_type_main-default text_color_inactive`}>
             <ListIcon type="secondary" />
             <a className={AppHeaderStyles.link} href="index.html">
               Лента заказов
@@ -32,7 +32,7 @@ const AppHeader = () => {
           </a>
         </li>
 
-        <li className={`${AppHeaderStyles.navbarItem} text text_type_main-default text_color_inactive`}>
+        <li className={`${AppHeaderStyles.navbarItem}  text_type_main-default text_color_inactive`}>
           <ProfileIcon type="secondary" />
           <a className={AppHeaderStyles.link} href="index.html">
             Личный кабинет

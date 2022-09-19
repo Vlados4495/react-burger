@@ -1,10 +1,13 @@
 import AppStyles from './App.module.css';
-import AppHeader from '../app-header/app-header'
+import AppHeader from '../app-header/app-header';
+import { burgerIngredientsData } from '../../utils/data';
+import BurgerIngredients from '../burger-ingredients/burger-ingredients'
 
-const App = () => {
+function App() {
     return (
         <div className={AppStyles.wrapper}>
             <AppHeader />
+            <BurgerIngredients ingredients={burgerIngredientsData} />
         </div>
     )
 }
